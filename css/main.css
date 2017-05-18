@@ -1,0 +1,159 @@
+body {
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+}
+
+.centre-div {
+  display: block;
+  text-align: center;
+
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#navbar {
+  background-color: #B02A00;
+  width: 100%;
+  height: 70px;
+}
+
+#logo-div {
+  width: 350px;
+  margin: 12px 10px 0 20px;
+
+  position: relative;
+  float: left;
+}
+
+#logo-div img {
+  position: relative;
+  float: left;
+
+  width: 100px;
+}
+
+#logo-title {
+  position: relative;
+  float: left;
+
+  margin: 12px 12px 0 12px;
+
+  color: white;
+  font-size: 1.2em;
+}
+
+#login-logout-div {
+  position: relative;
+  float: right;
+
+  height: 24px;
+  width: 60px;
+  padding: 5px;
+  margin: 18px 50px 0 0;
+
+  border: 1px solid white;
+
+  background-color: none;
+}
+
+#login-logout-link {
+  display: table;
+  margin: 0 auto;
+
+  line-height: 25px;
+  text-align: center;
+
+  color: white;
+  font-size: 0.9em;
+  font-weight: 400;
+  text-decoration: none;
+}
+
+#container {
+  width: 1024px;
+}
+
+#homepage-image {
+  height: 260px;
+  width: 645px;
+
+  margin: 50px;
+}
+
+#sign-up-div {
+  width: 506px;
+  height: 50px;
+
+  margin-top: 50px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+#email-box {
+  width: 400px;
+  height: 24px;
+
+  padding: 5px;
+
+  text-align: center;
+  font-size: 0.9em;
+  border: 1px solid #6b6b6b;
+}
+
+#sign-up {
+  width: 90px;
+  height: 36px;
+
+  background-color: #556B2F;
+  border: none;
+  font-size: 0.9em;
+  color: white;
+  font-weight: 400;
+}
+
+.proceed-button {
+  margin-top: 30px;
+  margin-bottom: 40px;
+  padding: 10px;
+
+  width: 170px;
+  height: 50px;
+
+  background-color: #8B0000;
+  color: white;
+  border: none;
+}
+
+.proceed-link {
+  margin-top: 30px;
+  margin-bottom: 40px;
+  padding: 15px 30px 15px 30px;
+
+  width: 200px;
+  height: 20px;
+
+  background-color: #8B0000;
+  color: white;
+  text-decoration: none;
+}
+
+#score-style {
+  font-size: 2em;
+}
+
+.submit-button {
+  padding: 5px;
+
+  width: 150px;
+  height: 35px;
+
+  background-color: #556B2F;
+  color: white;
+  border: none;
+}
+
+.empty-div-100px {
+  width: 100%;
+  height: 100px;
+}
