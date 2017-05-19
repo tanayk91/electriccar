@@ -1,0 +1,67 @@
+#car-image {
+  width: 65%;
+  margin: 0 auto;
+}
+
+#user-car-image {
+  height: 260px;
+  width: 645px;
+
+  margin: 30px;
+}
+
+#car-specs {
+  width: 601px;
+  margin: 0 auto;
+}
+
+.table-row {
+  height: 80px;
+}
+
+#speed {
+  position: relative;
+  float: left;
+
+  width: 220px;
+  padding-left: 40px;
+  padding-right: 40px;
+
+  border-right: 1px solid black;
+}
+
+#range {
+  position: relative;
+  float: left;
+
+  width: 220px;
+  padding-left: 40px;
+  padding-right: 40px;
+}
+
+.caption {
+  position: relative;
+  float: left;
+
+  width: 150px;
+  padding-left: 40px;
+  padding-right: 10px;
+}
+
+.description {
+  position: relative;
+  float: left;
+
+  width: 371px;
+
+  padding-left: 20px;
+  padding-right: 10px;
+  padding-top: 20px;
+
+  text-align: right;
+}
+
+.heading {
+  font-size: 1.2em;
+  font-weight: bold;
+}
