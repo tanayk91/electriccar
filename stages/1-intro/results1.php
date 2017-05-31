@@ -50,10 +50,10 @@
                     $result_questions = mysqli_query($link, $query_questions);
 
                     while ($question = mysqli_fetch_object($result_questions)) {
-                      echo "<h5>".$question->question."</h5>";
+                      echo "<h3>".$question->question."</h3>";
                     }
 
-                    echo "<br><br>";
+                    echo "<br>";
 
                     //query to get user response from database
                     $user_response_query = "SELECT `responseID` FROM `ecDB`.`response` WHERE `questionID` = 'z1' AND `userID` = '{$_SESSION['userID']}' LIMIT 1";
