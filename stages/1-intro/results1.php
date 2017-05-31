@@ -38,23 +38,25 @@
                 </h4>
                 <br><br>
                 <hr />
+                <br>
             </div>
             <div id="question-wise-summary">
                 <?php
                     include ("../../db/connection.php");
+                    session_start();
 
                     //query to get question from the database
                     $query_questions = "SELECT `question` FROM `ecDB`.`questions` WHERE questionID = 'z1'";
                     $result_questions = mysqli_query($link, $query_questions);
 
                     while ($question = mysqli_fetch_object($result_questions)) {
-                      echo $question->question;
+                      echo "<h5>".$question->question."</h5>";
                     }
 
                     echo "<br><br>";
 
                     //query to get user response from database
-                    $user_response_query = "SELECT `responseID` FROM `ecDB`.`response` WHERE `questionID` = 'z1' AND `userID` = '{$_SESSION['userID']}'";
+                    $user_response_query = "SELECT `responseID` FROM `ecDB`.`response` WHERE `questionID` = 'z1' AND `userID` = '{$_SESSION['userID']}' LIMIT 1";
                     $user_response_result = mysqli_query($link, $user_response_query);
 
                     while ($response = mysqli_fetch_object($user_response_result)) {
@@ -63,7 +65,7 @@
                     }
 
                     //query to get the solution from the database
-                    $correct_answer_query = "SELECT `answerID` FROM `ecDB`.`answers` WHERE `questionID` = 'z1' AND `userID` = '{$_SESSION['userID']}'";
+                    $correct_answer_query = "SELECT `answerID` FROM `ecDB`.`answers` WHERE `questionID` = 'z1'";
                     $correct_answer_result = mysqli_query($link, $correct_answer_query);
 
                     while ($solution = mysqli_fetch_object($correct_answer_result)) {
@@ -77,7 +79,9 @@
                     }
 
                  ?>
+                 <br><br><br>
                  <hr />
+                 <br>
             </div>
         </div>
     </body>
