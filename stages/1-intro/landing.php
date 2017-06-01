@@ -1,5 +1,5 @@
 <?php
-  include("../scoring/reset_scores.php");
+  include("scoring/reset_scores.php");
   if ($_POST['start_challenge'] == "START") {
     header('Location: questions/pollution_questions_q1.php');
   }
