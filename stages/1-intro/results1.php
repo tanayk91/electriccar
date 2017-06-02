@@ -22,7 +22,7 @@
         </div>
         <div id="container">
             <div id="score-summary">
-                <h2 style="float: left">You scored <?php session_start(); echo $_SESSION['pollution-score']; ?> points in this section</h2>
+                <h2 style="float: left">You scored <?php session_start(); echo $_SESSION['pollution-score-1']; ?> points in this section</h2>
                 <div class="right-adjacent-button" style="margin-left: 40px">
                     <a href="delhi3.php" class="proceed-link centre-div">CONTINUE</a>
                 </div>
@@ -31,14 +31,17 @@
                 </div>
                 <div class="empty-div-100px"></div>
                 <h4>Correct questions:
-                    <?php session_start(); echo $_SESSION['correct_questions']; ?>
+                    <?php session_start(); echo $_SESSION['pollution-1-correct_questions']; ?>
                 </h4>
                 <h4>Incorrect questions:
-                    <?php session_start(); echo $_SESSION['incorrect_questions']; ?>
+                    <?php session_start(); echo $_SESSION['pollution-1-incorrect_questions']; ?>
                 </h4>
                 <br><br>
                 <hr />
                 <br>
+            </div>
+            <div id="chart-div">
+                <h4>Reference graph:</h4>
             </div>
             <div id="question-wise-summary">
                 <?php
@@ -83,7 +86,7 @@
                       $select_option_result = mysqli_query($link, $select_option_query);
 
                       while ($selected_option = mysqli_fetch_object($select_option_result)) {
-                        echo "Correct answer: ".$selected_option->$response_with_prefix;
+                        echo "Correct answer: ".$selected_option->$answer_with_prefix;
                         echo "<br><br>";
                       }
 
@@ -136,7 +139,7 @@
                       $select_option_result = mysqli_query($link, $select_option_query);
 
                       while ($selected_option = mysqli_fetch_object($select_option_result)) {
-                        echo "Correct answer: ".$selected_option->$response_with_prefix;
+                        echo "Correct answer: ".$selected_option->$answer_with_prefix;
                         echo "<br><br>";
                       }
 
@@ -189,7 +192,7 @@
                       $select_option_result = mysqli_query($link, $select_option_query);
 
                       while ($selected_option = mysqli_fetch_object($select_option_result)) {
-                        echo "Correct answer: ".$selected_option->$response_with_prefix;
+                        echo "Correct answer: ".$selected_option->$answer_with_prefix;
                         echo "<br><br>";
                       }
 
@@ -242,7 +245,7 @@
                       $select_option_result = mysqli_query($link, $select_option_query);
 
                       while ($selected_option = mysqli_fetch_object($select_option_result)) {
-                        echo "Correct answer: ".$selected_option->$response_with_prefix;
+                        echo "Correct answer: ".$selected_option->$answer_with_prefix;
                         echo "<br><br>";
                       }
 
@@ -260,5 +263,61 @@
 
             </div>
         </div>
+        <script type="text/javascript">
+        google.charts.load('current', {packages: ['corechart', 'bar']});
+        google.charts.setOnLoadCallback(drawBasic);
+
+        function drawBasic() {
+
+          var data = new google.visualization.arrayToDataTable([
+             ['Month', 'PM2.5 Levels', { role: 'style' }],
+             ['January', 150, 'opacity:0.8'],
+             ['February', 160, 'opacity:0.8'],
+             ['March', 145, 'opacity:0.8'],
+             ['April', 140, 'opacity:0.8'],
+             ['May', 130, 'opacity:0.8'],
+             ['June', 145, 'opacity:0.8'],
+             ['July', 140, 'opacity:0.8'],
+             ['August', 135, 'opacity:0.8'],
+             ['September', 150, 'opacity:0.8'],
+             ['October', 155, 'opacity:0.8'],
+             ['November', 165, 'opacity:0.8'],
+             ['December', 170, 'opacity:0.8'],
+          ]);
+
+          var options = {
+            height: 600,
+            chartArea: {
+              width: 800,
+            },
+            title: 'Pollution Levels in Delhi',
+            hAxis: {
+              title: 'Month',
+              minTextSpacing: 2,
+              textStyle : {fontSize: 13},
+            },
+            colors: ['#284584'],
+            animation: {
+              duration: 2000,
+              easing: 'out',
+              startup: true,
+            },
+            vAxis: {
+              title: 'PM2.5 Levels',
+              baseline: 0,
+              ticks: [0,20,40,60,80,100,120,140,160,180],
+            },
+            legend: {
+              position: 'top',
+            },
+          };
+
+          var chart = new google.visualization.ColumnChart(
+            document.getElementById('chart-div'));
+
+            chart.draw(data, options);
+          }
+          </script>
+
     </body>
 </html>

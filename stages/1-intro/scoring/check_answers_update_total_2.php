@@ -56,21 +56,21 @@ if ($_POST['check'] == "Check Answers!") {
   }
 
   //get total number of correct questions
-  $correct_questions_query = "SELECT `score` FROM `ecDB`.`pollution_score` WHERE `userID` = '{$_SESSION['userID']}' AND `score` = 10";
+  $correct_questions_query = "SELECT `score` FROM `ecDB`.`pollution_score` WHERE `userID` = '{$_SESSION['userID']}' AND `score` = 10 AND `questionID` IN ('z5','z6','z7','z9','z10')";
   $correct_questions_result = mysqli_query($link, $correct_questions_query);
   $num_correct_questions = mysqli_num_rows($correct_questions_result);
 
-  $_SESSION['correct_questions'] = $num_correct_questions;
+  $_SESSION['pollution-2-correct_questions'] = $num_correct_questions;
 
   //get total number of incorrect questions
-  $incorrect_questions_query = "SELECT `score` FROM `ecDB`.`pollution_score` WHERE `userID` = '{$_SESSION['userID']}' AND `score` = 0";
+  $incorrect_questions_query = "SELECT `score` FROM `ecDB`.`pollution_score` WHERE `userID` = '{$_SESSION['userID']}' AND `score` = 0 AND `questionID` IN ('z5','z6','z7','z9','z10')";
   $incorrect_questions_result = mysqli_query($link, $incorrect_questions_query);
   $num_incorrect_questions = mysqli_num_rows($incorrect_questions_result);
 
-  $_SESSION['incorrect_questions'] = $num_incorrect_questions;
+  $_SESSION['pollution-2-incorrect_questions'] = $num_incorrect_questions;
 
   //save the pollution score in a session variable
-  $_SESSION['pollution-score'] = $total_pollution_score;
+  $_SESSION['pollution-score-2'] = $total_pollution_score;
 
   //save the total score in a session variable
   $_SESSION['score'] = $_SESSION['score'] + $total_pollution_score;
