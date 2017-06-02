@@ -1,7 +1,7 @@
 <?php
 
   //check answer
-  include("../scoring/check_answers_update_total.php");
+  include("../scoring/check_answers_update_total_2.php");
 
   //go to next page
   if ($_POST['check'] == "Check Answers!") {

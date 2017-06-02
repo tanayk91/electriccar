@@ -1,11 +1,11 @@
 <?php
 
   //check answer
-  include("../scoring/check_answers_update_total.php");
+  include("../scoring/check_answers_update_total_1.php");
 
   //go to next page
   if ($_POST['check'] == "Check Answers!") {
-    header('Location: ../results2.php');
+    header('Location: ../results1.php');
   }
 ?>
 <!DOCTYPE html>
