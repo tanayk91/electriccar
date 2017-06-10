@@ -69,6 +69,20 @@ if ($_POST['check'] == "Check Answers!") {
     $total_wheels_score = $total_wheels_score + $wheels_single_score->score;
   }
 
+  //get total number of correct questions
+  $correct_questions_query = "SELECT `score` FROM `ecDB`.`batteries_score` WHERE `userID` = '{$_SESSION['userID']}' AND `score` = 10";
+  $correct_questions_result = mysqli_query($link, $correct_questions_query);
+  $num_correct_questions = mysqli_num_rows($correct_questions_result);
+
+  $_SESSION['wheels-correct_questions'] = $num_correct_questions;
+
+  //get total number of incorrect questions
+  $incorrect_questions_query = "SELECT `score` FROM `ecDB`.`batteries_score` WHERE `userID` = '{$_SESSION['userID']}' AND `score` = 0";
+  $incorrect_questions_result = mysqli_query($link, $incorrect_questions_query);
+  $num_incorrect_questions = mysqli_num_rows($incorrect_questions_result);
+
+  $_SESSION['wheels-incorrect_questions'] = $num_incorrect_questions;
+
   //save the wheels score in a session variable
   $_SESSION['wheels-score'] = $total_wheels_score;
 
