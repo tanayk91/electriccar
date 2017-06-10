@@ -59,6 +59,21 @@
       $total_area_score = $total_area_score + $area_single_score->score;
     }
 
+    //get total number of correct questions
+    $correct_questions_query = "SELECT `score` FROM `ecDB`.`area_score` WHERE `userID` = '{$_SESSION['userID']}' AND `score` = 10 AND `questionID` IN ('b1','b2','b3','b4')";
+    $correct_questions_result = mysqli_query($link, $correct_questions_query);
+    $num_correct_questions = mysqli_num_rows($correct_questions_result);
+
+    $_SESSION['area-correct_questions'] = $num_correct_questions;
+
+    //get total number of incorrect questions
+    $incorrect_questions_query = "SELECT `score` FROM `ecDB`.`area_score` WHERE `userID` = '{$_SESSION['userID']}' AND `score` = 0 AND `questionID` IN ('b1','b2','b3','b4')";
+    $incorrect_questions_result = mysqli_query($link, $incorrect_questions_query);
+    $num_incorrect_questions = mysqli_num_rows($incorrect_questions_result);
+
+    $_SESSION['area-incorrect_questions'] = $num_incorrect_questions;
+
+
     //save the area section score in a session variable
     $_SESSION['area-score'] = $total_area_score;
 

@@ -20,22 +20,25 @@
       </div>
         <div id="progress-bar">
         </div>
-        <div id="container-small">
-            <h2 class="centre-div">Results</h2>
-            <br><br><br>
-            <h4>Total score in this section:
-                <?php session_start(); echo $_SESSION['area-score']; ?>
-            </h4>
-            <!--h4>Number of correct questions:
-            </h4>
-            <h4>Number of incorrect questions:
-            </h4-->
-            <br><br><br>
-            <div class="centre-div">
-                <a href="body_area.php" class="proceed-link left-adjacent-button">RESTART CHALLENGE</a>
-            </div>
-            <div class="centre-div">
-                <a href="../4-batteries/batteries.php" class="proceed-link right-adjacent-button">CONTINUE</a>
+        <div id="container">
+            <div id="score-summary">
+                <h2 style="float: left">You scored <?php session_start(); echo $_SESSION['area-score']; ?> points in this section</h2>
+                <div class="centre-div">
+                    <a href="body_area.php" class="proceed-link left-adjacent-button">RESTART CHALLENGE</a>
+                </div>
+                <div class="centre-div">
+                    <a href="../4-batteries/batteries.php" class="proceed-link right-adjacent-button">CONTINUE</a>
+                </div>
+                <div class="empty-div-100px"></div>
+                <h4>Correct questions:
+                    <?php session_start(); echo $_SESSION['area-correct_questions']; ?>
+                </h4>
+                <h4>Incorrect questions:
+                    <?php session_start(); echo $_SESSION['area-incorrect_questions']; ?>
+                </h4>
+                <br><br>
+                <hr />
+                <br>
             </div>
         </div>
     </body>
