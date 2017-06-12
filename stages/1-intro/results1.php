@@ -7,6 +7,7 @@
         <link rel="stylesheet" href="../../css/stages.css">
         <link rel="stylesheet" href="css/delhi.css">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+        <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
     </head>
     <body>
       <div id="navbar">
@@ -40,10 +41,20 @@
                 <hr />
                 <br>
             </div>
-            <div id="chart-div">
-                <h4>Reference graph:</h4>
+            <div id="more-info">
+                <h4>Learn more at KHAN ACADEMY&reg;: </h4>
+                <a href="https://www.khanacademy.org/math/in-eighth-grade-math/data-handling-1/organizing-data/e/reading_pictographs_2" target="_blank">Data Handling: Organizing Data</a><br>
+                <a href="https://www.khanacademy.org/math/in-eighth-grade-math/data-handling-1/new-topic-2015-11-12T18:23:20.795Z/v/reading-pie-graphs-circle-graphs" target="_blank">Data Handling: Pie Charts</a>
+                <p>NOTE: All Khan Academy content is available for free at www.khanacademy.org</p>
+                <br>
+                <hr />
+                <br>
             </div>
             <div id="question-wise-summary">
+                <h4>Question Wise Summary</h4>
+                <div id="chart-div">
+                    <h4>Reference graph:</h4>
+                </div>
                 <?php
                     include ("../../db/connection.php");
                     session_start();

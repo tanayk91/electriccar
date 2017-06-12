@@ -40,10 +40,20 @@
                 <hr />
                 <br>
             </div>
-            <div id="chart-div">
-                <h4>Reference graph:</h4>
+            <div id="more-info">
+                <h4>Learn more at KHAN ACADEMY&reg;: </h4>
+                <a href="https://www.khanacademy.org/math/in-eighth-grade-math/data-handling-1/grouping-data-1/v/histograms-intro" target="_blank">Data Handling: Histograms</a><br>
+                <a href="https://www.khanacademy.org/math/in-eighth-grade-math/data-handling-1/new-topic-2015-11-12T18:23:30.291Z/v/basic-probability" target="_blank">Probability</a>
+                <p>NOTE: All Khan Academy content is available for free at www.khanacademy.org</p>
+                <br>
+                <hr />
+                <br>
             </div>
             <div id="question-wise-summary">
+                <h4>Question Wise Summary</h4>
+                <div id="chart-div">
+                    <h4>Reference graph:</h4>
+                </div>
                 <?php
                     include ("../../db/connection.php");
                     session_start();
