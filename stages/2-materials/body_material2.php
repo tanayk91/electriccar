@@ -73,6 +73,7 @@
             hardware, surgical instruments, major appliances, industrial equipment (for example, in sugar refineries) and as an automotive and aerospace
             structural alloy and construction material in large buildings.
           </div>
+          <p><a href="https://en.wikipedia.org/wiki/Stainless_steel" target="_blank">"Stainless steel," Wikipedia, the free encyclopedia</a></p>
           <div class="empty-div-100px">
           </div>
           <h3 class="heading-3">

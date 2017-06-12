@@ -41,6 +41,14 @@
                 <hr />
                 <br>
             </div>
+            <div id="more-info">
+                <h4>Learn more: </h4>
+                <a href="https://en.wikipedia.org/wiki/Metal#Properties" target="_blank">"Properties (Metal)," Wikipedia, the free encyclopedia</a><br>
+                <a href="https://en.wikipedia.org/wiki/Nonmetal#Definition_and_properties" target="_blank">"Definition and properties (Nonmetal)," Wikipedia, the free encyclopedia</a>
+                <br>
+                <hr />
+                <br>
+            </div>
             <h3>Choose body material</h3>
             <div id="clear"></div>
             <br>
@@ -75,6 +83,7 @@
             <hr />
             <br>
             <div id="question-wise-summary">
+                <h4>Question Wise Summary</h4>
                 <?php
                     include ("../../db/connection.php");
                     session_start();

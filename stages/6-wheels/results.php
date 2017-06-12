@@ -41,7 +41,15 @@
             <hr />
             <br>
           </div>
-
+          <div id="more-info">
+              <h4>Learn more at KHAN ACADEMY&reg;: </h4>
+              <a href="https://www.khanacademy.org/math/in-eighth-grade-math/eighth-mensuration#ncert-eighth-geometry-surface-area" target="_blank">Surface Area</a><br>
+              <a href="https://www.khanacademy.org/math/in-eighth-grade-math/eighth-mensuration/volume-cube-cuboid-cylinder/v/how-we-measure-volume" target="_blank">Volume of cube, cuboid, cylinder</a>
+              <p>NOTE: All Khan Academy content is available for free at www.khanacademy.org</p>
+              <br>
+              <hr />
+              <br>
+          </div>
           <div id="question-wise-summary">
               <?php
                   include ("../../db/connection.php");

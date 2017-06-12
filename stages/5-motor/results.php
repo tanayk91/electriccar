@@ -41,8 +41,16 @@
             <hr />
             <br>
           </div>
-
+          <div id="more-info">
+              <h4>Learn more: </h4>
+              <a href="https://en.wikipedia.org/wiki/Electric_motor" target="_blank">"Electric motor," Wikipedia, the free encyclopedia</a><br>
+              <a href="https://en.wikipedia.org/wiki/Electromagnetic_induction" target="_blank">"Electromagnetic induction," Wikipedia, the free encyclopedia</a>
+              <br>
+              <hr />
+              <br>
+          </div>
           <div id="question-wise-summary">
+              <h4>Question Wise Summary</h4>
               <?php
                   include ("../../db/connection.php");
                   session_start();

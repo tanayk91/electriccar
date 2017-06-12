@@ -42,8 +42,19 @@
             <hr />
             <br>
           </div>
-
+          <div id="more-info">
+              <h4>Learn more: </h4>
+              <h4>KHAN ACADEMY&reg;</h4>
+              <a href="https://www.khanacademy.org/science/chemistry/oxidation-reduction/batter-galvanic-voltaic-cell/v/redox-reaction-from-dissolving-zinc-in-copper-sulfate" target="_blank">Galvanic cells (batteries)</a><br>
+              <p>NOTE: All Khan Academy content is available for free at www.khanacademy.org</p>
+              <h4>Wikipedia</h4>
+              <a href="https://en.wikipedia.org/wiki/Electrochemistry#Electrochemical_cells" target="_blank">"Electrochemical cells," Wikipedia, the free encyclopedia</a>
+              <br>
+              <hr />
+              <br>
+          </div>
           <div id="question-wise-summary">
+              <h4>Question Wise Summary</h4>
               <?php
                   include ("../../db/connection.php");
                   session_start();
