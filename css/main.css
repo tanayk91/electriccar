@@ -139,6 +139,20 @@ body {
   text-decoration: none;
 }
 
+.proceed-link-small {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding: 10px 20px 10px 20px;
+
+  width: 120px;
+  height: 15px;
+
+  background-color: #8B0000;
+  color: white;
+  font-weight: lighter;
+  text-decoration: none;
+}
+
 #score-style {
   font-size: 2em;
 }
