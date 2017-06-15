@@ -47,6 +47,7 @@ body {
 .locked-battery-message {
   width: 75%;
   padding: 20px 7px 0 7px;
+  margin-bottom: 20px; 
 }
 
 .battery-radio {
