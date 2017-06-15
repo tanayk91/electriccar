@@ -44,7 +44,7 @@
                       <a href="../1-intro/delhi1.php">Pollution in Delhi</a>
                       <a href="../2-materials/body_material1.php">Materials</a>
                       <a href="../3-body_area/body_area.php">Area</a>
-                      <a href="../4-batteries/batteries.php">Batteries</a>
+                      <a href="../4-batteries/batteries1.php">Batteries</a>
                       <a href="../5-motor/motor.php">Motor</a>
                       <a href="../6-wheels/wheels.php">Wheels</a>
                   </div>
