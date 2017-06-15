@@ -45,7 +45,7 @@
                 <h4>Learn more: </h4>
                 <a href="https://en.wikipedia.org/wiki/Metal#Properties" target="_blank">"Properties (Metal)," Wikipedia, the free encyclopedia</a><br>
                 <a href="https://en.wikipedia.org/wiki/Nonmetal#Definition_and_properties" target="_blank">"Definition and properties (Nonmetal)," Wikipedia, the free encyclopedia</a>
-                <br>
+                <br><br>
                 <hr />
                 <br>
             </div>
@@ -63,11 +63,11 @@
                       $get_material_score_result = mysqli_query($link, $get_material_score_query);
 
                       while ($get_material_score = mysqli_fetch_object($get_material_score_result)) {
-                        if (($get_material_score->materials_score >= 40) && ($get_material_score->materials_score <= 60)) {
+                        if (($get_material_score->materials_score >= 20) && ($get_material_score->materials_score <= 30)) {
                           echo "<button id='aluminium-button' name='aluminium' value='aluminium'>Aluminium</button>";
                           echo "<button id='carbon-fiber-button' name='carbon-fiber' value='carbon-fiber' disabled>Carbon Fiber</button>";
                           echo "<h4>To unlock Carbon Fiber, you need to score 80% or above on the challenge.</h4>";
-                        } elseif ($get_material_score->materials_score >= 80) {
+                        } elseif ($get_material_score->materials_score >= 40) {
                           echo "<button id='aluminium-button' name='aluminium' value='aluminium'>Aluminium</button>";
                           echo "<button id='carbon-fiber-button' name='carbon-fiber' value='carbon-fiber'>Carbon Fiber</button>";
                           echo "<h4>Awesome! You now have high grade Carbon Fiber, the lightest and strongest material for your car!</h4>";

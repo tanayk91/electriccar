@@ -72,8 +72,8 @@
             material for many applications. The alloy is milled into coils, sheets, plates, bars, wire, and tubing to be used in cookware, cutlery, household
             hardware, surgical instruments, major appliances, industrial equipment (for example, in sugar refineries) and as an automotive and aerospace
             structural alloy and construction material in large buildings.
+            <p style="font-size:0.8em"><a href="https://en.wikipedia.org/wiki/Stainless_steel" target="_blank">"Stainless steel," Wikipedia, the free encyclopedia</a></p>
           </div>
-          <p><a href="https://en.wikipedia.org/wiki/Stainless_steel" target="_blank">"Stainless steel," Wikipedia, the free encyclopedia</a></p>
           <div class="empty-div-100px">
           </div>
           <h3 class="heading-3">
