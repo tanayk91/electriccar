@@ -4,6 +4,11 @@ body {
   font-family: 'Roboto', sans-serif;
 }
 
+#battery-image {
+  background-image: url("../images/Battery.jpeg");
+  height: 500px;
+}
+
 .instruction {
   width: 100%;
   margin: 20px;
@@ -40,6 +45,7 @@ body {
 }
 
 .locked-battery-message {
+  width: 75%;
   padding: 20px 7px 0 7px;
 }
 
