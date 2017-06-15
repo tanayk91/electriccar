@@ -27,7 +27,7 @@
                     <a href="body_area.php" class="proceed-link left-adjacent-button">RESTART CHALLENGE</a>
                 </div>
                 <div class="centre-div">
-                    <a href="../4-batteries/batteries.php" class="proceed-link right-adjacent-button">CONTINUE</a>
+                    <a href="../4-batteries/batteries1.php" class="proceed-link right-adjacent-button">CONTINUE</a>
                 </div>
                 <div class="empty-div-100px"></div>
                 <h4>Correct questions:
