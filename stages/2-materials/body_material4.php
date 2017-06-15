@@ -61,7 +61,7 @@
               To use air freight, click on Begin Challenge. Else, click on Continue.
           </div>
           <div class="centre-div">
-              <a href="results2.php" class="proceed-link left-adjacent-button">CONTINUE</a>
+              <a href="../3-body_area/body_area.php" class="proceed-link left-adjacent-button">CONTINUE</a>
               <a href="questions/material_questions_q6.php" class="proceed-link right-adjacent-button">BEGIN CHALLENGE</a>
           </div>
       </div>

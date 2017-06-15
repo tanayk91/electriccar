@@ -71,8 +71,8 @@
                       Aluminium is a silvery-white, soft, nonmagnetic, ductile metal. It is the third most abundant element after oxygen and silicon and the most abundant metal in the crust. Aluminium metal is so chemically reactive that native specimens are rare. </p><p>As the automotive industry begins to pay more and more attention to fuel efficiency, reducing CO<sub>2</sub> emissions and design, aluminium is playing an ever more important role in modern cars. Every kilogram of aluminium used in a car reduces the overall weight of the vehicle by one kilogram. For this reason more and more car parts are being made from aluminium.
                   </div>
               </div>
-              <p><a href="https://en.wikipedia.org/wiki/Aluminium" target="_blank">"Aluminium," Wikipedia, the free encyclopedia</a></p>
-              <p><a href="https://en.wikipedia.org/wiki/Carbon_fibers" target="_blank">"Carbon fibers," Wikipedia, the free encyclopedia</a></p>
+              <p style="font-size:0.8em"><a href="https://en.wikipedia.org/wiki/Aluminium" target="_blank">"Aluminium," Wikipedia, the free encyclopedia</a></p>
+              <p style="font-size:0.8em"><a href="https://en.wikipedia.org/wiki/Carbon_fibers" target="_blank">"Carbon fibers," Wikipedia, the free encyclopedia</a></p>
           </div>
           <div class="centre-div">
               <a href="body_material4.php" class="proceed-link left-adjacent-button">CONTINUE</a>

@@ -25,10 +25,10 @@
             <div id="score-summary">
               <h2 style="float: left">You scored <?php session_start(); echo $_SESSION['materials-score-2']; ?> points in this section</h2>
               <div class="right-adjacent-button" style="margin-left: 40px">
-                  <a href="body_material4.php" class="proceed-link centre-div">CONTINUE</a>
+                  <a href="../3-body_area/body_area.php" class="proceed-link centre-div">CONTINUE</a>
               </div>
               <div class="right-adjacent-button">
-                  <a href="body_material3.php" class="proceed-link centre-div">RESTART CHALLENGE</a>
+                  <a href="body_material4.php" class="proceed-link centre-div">RESTART CHALLENGE</a>
               </div>
               <div class="empty-div-100px"></div>
               <h4>Correct questions:
@@ -45,7 +45,7 @@
                 <h4>Learn more: </h4>
                 <a href="https://en.wikipedia.org/wiki/Metal#Properties" target="_blank">"Properties (Metal)," Wikipedia, the free encyclopedia</a><br>
                 <a href="https://en.wikipedia.org/wiki/Nonmetal#Definition_and_properties" target="_blank">"Definition and properties (Nonmetal)," Wikipedia, the free encyclopedia</a>
-                <br>
+                <br><br>
                 <hr />
                 <br>
             </div>
