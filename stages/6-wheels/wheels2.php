@@ -1,7 +1,8 @@
 <?php
 
 //go to next stage
-if ($_POST['navigate'] == "NEXT STAGE >>") {
+
+if ($_POST['navigate'] == "VIEW MY CAR >>") {
   header('Location: ../7-your_car/final.php');
 }
 
