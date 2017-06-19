@@ -3,6 +3,11 @@
   float: left;
 }
 
+#wheels-bg-image {
+  background-image: url("../images/Wheels.jpeg");
+  height: 500px;
+}
+
 #wheel {
   height: 360px;
   width: 370px;
