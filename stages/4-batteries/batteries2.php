@@ -52,9 +52,9 @@ if ($_POST['navigate'] == "NEXT STAGE >>") {
                     <a href="../1-intro/delhi1.php">Pollution in Delhi</a>
                     <a href="../2-materials/body_material1.php">Materials</a>
                     <a href="../3-body_area/body_area.php">Area</a>
-                    <a href="../4-batteries/batteries.php">Batteries</a>
-                    <a href="../5-motor/motor.php">Motor</a>
-                    <a href="../6-wheels/wheels.php">Wheels</a>
+                    <a href="../4-batteries/batteries1.php">Batteries</a>
+                    <a href="../5-motor/motor1.php">Motor</a>
+                    <a href="../6-wheels/wheels1.php">Wheels</a>
                 </div>
             </div>
         </div>
@@ -64,11 +64,11 @@ if ($_POST['navigate'] == "NEXT STAGE >>") {
                 <h5 class="instruction" id="sub-instruction">Select any one</h5>
                 <div class="navigate-div">
                     <form method="post">
-                        <input type="submit" id="navigate-link" class="proceed-button" name="navigate" value="NEXT STAGE >>" />
+                        <a href="landing.php" class="proceed-link">BEGIN CHALLENGE</a>
                     </form>
                 </div>
             </div>
-            <br><br><br>
+            <br><br>
 
               <?php
 
@@ -100,33 +100,21 @@ if ($_POST['navigate'] == "NEXT STAGE >>") {
                         <input type="hidden" id="nimh-batt" name="second-battery" value="second-unselected" />
                         <div class="battery-head centre-div">Nickel Metal Hydride</div>
                         <div class="locked-battery-message centre-div">To unlock this battery, you need to get at least 2 questions right in the challenge.</div>
-                        <div class="centre-div">
-                            <a href="landing.php" class="proceed-link-small">BEGIN CHALLENGE</a>
-                        </div>
                         </div>';
                     echo '<div class="battery-div" id="lead-acid-div">
                         <input type="hidden" id="lead-acid-batt" name="third-battery" value="third-unselected" />
                         <div class="battery-head centre-div">Lead Acid</div>
                         <div class="locked-battery-message centre-div">To unlock this battery, you need to get at least 3 questions right in the challenge.</div>
-                        <div class="centre-div">
-                            <a href="landing.php" class="proceed-link-small">BEGIN CHALLENGE</a>
-                        </div>
                         </div>';
                     echo '<div class="battery-div" id="li-ion-div">
                         <input type="hidden" id="li-ion-batt" name="fourth-battery" value="fourth-unselected" />
                         <div class="battery-head centre-div">Lithium Ion</div>
                         <div class="locked-battery-message centre-div">To unlock this battery, you need to get at least 4 questions right in the challenge.</div>
-                        <div class="centre-div">
-                            <a href="landing.php" class="proceed-link-small">BEGIN CHALLENGE</a>
-                        </div>
                         </div>';
                     echo '<div class="battery-div" id="li-ion-poly-div">
                         <input type="hidden" id="li-ion-poly-batt" name="fifth-battery" value="fifth-unselected" />
                         <div class="battery-head centre-div">Lithium Ion Polymer</div>
                         <div class="locked-battery-message centre-div">To unlock this battery, you need to get all 5 questions right in the challenge.</div>
-                        <div class="centre-div">
-                            <a href="landing.php" class="proceed-link-small">BEGIN CHALLENGE</a>
-                        </div>
                         </div>';
 
                   } elseif ($get_battery_score->batteries_score == 20) {
@@ -159,25 +147,16 @@ if ($_POST['navigate'] == "NEXT STAGE >>") {
                         <input type="hidden" id="lead-acid-batt" name="third-battery" value="third-unselected" />
                         <div class="battery-head centre-div">Lead Acid</div>
                         <div class="locked-battery-message centre-div">To unlock this battery, you need to get at least 3 questions right in the challenge.</div>
-                        <div class="centre-div">
-                            <a href="landing.php" class="proceed-link-small">BEGIN CHALLENGE</a>
-                        </div>
                         </div>';
                     echo '<div class="battery-div" id="li-ion-div">
                         <input type="hidden" id="li-ion-batt" name="fourth-battery" value="fourth-unselected" />
                         <div class="battery-head centre-div">Lithium Ion</div>
                         <div class="locked-battery-message centre-div">To unlock this battery, you need to get at least 4 questions right in the challenge.</div>
-                        <div class="centre-div">
-                            <a href="landing.php" class="proceed-link-small">BEGIN CHALLENGE</a>
-                        </div>
                         </div>';
                     echo '<div class="battery-div" id="li-ion-poly-div">
                         <input type="hidden" id="li-ion-poly-batt" name="fifth-battery" value="fifth-unselected" />
                         <div class="battery-head centre-div">Lithium Ion Polymer</div>
                         <div class="locked-battery-message centre-div">To unlock this battery, you need to get all 5 questions right in the challenge.</div>
-                        <div class="centre-div">
-                            <a href="landing.php" class="proceed-link-small">BEGIN CHALLENGE</a>
-                        </div>
                         </div>';
                   } elseif ($get_battery_score->batteries_score == 30) {
                     echo '<div class="battery-div" id="nicd-div">
@@ -222,17 +201,11 @@ if ($_POST['navigate'] == "NEXT STAGE >>") {
                         <input type="hidden" id="li-ion-batt" name="fourth-battery" value="fourth-unselected" />
                         <div class="battery-head centre-div">Lithium Ion</div>
                         <div class="locked-battery-message centre-div">To unlock this battery, you need to get at least 4 questions right in the challenge.</div>
-                        <div class="centre-div">
-                            <a href="landing.php" class="proceed-link-small">BEGIN CHALLENGE</a>
-                        </div>
                         </div>';
                     echo '<div class="battery-div" id="li-ion-poly-div">
                         <input type="hidden" id="li-ion-poly-batt" name="fifth-battery" value="fifth-unselected" />
                         <div class="battery-head centre-div">Lithium Ion Polymer</div>
                         <div class="locked-battery-message centre-div">To unlock this battery, you need to get all 5 questions right in the challenge.</div>
-                        <div class="centre-div">
-                            <a href="landing.php" class="proceed-link-small">BEGIN CHALLENGE</a>
-                        </div>
                         </div>';
                   } elseif ($get_battery_score->batteries_score == 40) {
                     echo '<div class="battery-div" id="nicd-div">

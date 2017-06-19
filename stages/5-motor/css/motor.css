@@ -3,6 +3,11 @@
   float: left;
 }
 
+#motor-bg-image {
+  background-image: url("../images/Motor.jpeg");
+  height: 500px;
+}
+
 #motor {
   height: 360px;
   width: 400px;
