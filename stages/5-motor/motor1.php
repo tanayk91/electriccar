@@ -5,11 +5,11 @@
         <link href="https://fonts.googleapis.com/css?family=Roboto:300,400" rel="stylesheet">
         <link rel="stylesheet" href="../../css/main.css">
         <link rel="stylesheet" href="../../css/stages.css">
-        <link rel="stylesheet" href="css/body_material.css">
+        <link rel="stylesheet" href="css/motor.css">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     </head>
     <body>
-        <div class="parallax-image" id="aluminium-image">
+        <div class="parallax-image" id="motor-bg-image">
             <div id="navbar">
                 <div id="logo-div">
                     <img src="../../images/logo_white_small.png" />
@@ -22,7 +22,6 @@
             <div id="progress-bar">
                 <div id="user-score">
                   <?php
-
                   session_start();
                   include ("../../db/connection.php");
 
@@ -52,34 +51,15 @@
               </div>
           </div>
           <div class="heading-1 centre-div" id="page-heading" style="color: white">
-              <h1>You can use stainless steel to build your car</h1>
+              <h1>An electric motor will determine the acceleration and top speed for your car.</h1>
           </div>
       </div>
-      <div id="container">
-          <div class="content-styling centre-div">
-              <h3>You also have the option to upgrade to Aluminium or Carbon Fiber.</h3>
-              To unlock these materials, you'll need to complete a challenge.
-              <div id="tabular-description-div">
-                  <div class="table-header" id="aluminium">
-                      Aluminium
-                  </div>
-                  <div class="table-header" id="carbon-fiber">
-                      Carbon Fiber
-                  </div>
-                  <div id="clear"></div>
-                  <div id="description-div">
-                      Aluminium is a silvery-white, soft, nonmagnetic, ductile metal. It is the third most abundant element after oxygen and silicon and the most abundant metal in the crust. Aluminium metal is so chemically reactive that native specimens are rare. </p><p>As the automotive industry begins to pay more and more attention to fuel efficiency, reducing CO<sub>2</sub> emissions and design, aluminium is playing an ever more important role in modern cars. Every kilogram of aluminium used in a car reduces the overall weight of the vehicle by one kilogram. For this reason more and more car parts are being made from aluminium.
-                  </div>
-              </div>
-              <p style="font-size:0.8em"><a href="https://en.wikipedia.org/wiki/Aluminium" target="_blank">"Aluminium," Wikipedia, the free encyclopedia</a></p>
-              <p style="font-size:0.8em"><a href="https://en.wikipedia.org/wiki/Carbon_fibers" target="_blank">"Carbon fibers," Wikipedia, the free encyclopedia</a></p>
-          </div>
-          <div class="centre-div">
-              <a href="body_material4.php" class="proceed-link left-adjacent-button">CONTINUE</a>
-              <a href="questions/material_questions_q1.php" class="proceed-link right-adjacent-button">BEGIN CHALLENGE</a>
-          </div>
+      <div id="content" class="content-styling centre-div">
+          <p>A 75 kWh motor is available by default. But to build a car with better performance, you can upgrade to a motor with a higher rating. To do so, complete the challenge.</p>
+      </div>
+      <div class="centre-div">
+          <a href="motor2.php" class="proceed-link">CONTINUE</a>
       </div>
       <script src="../../js/parallax.js"></script>
-      <script src="js/materials.js"></script>
     </body>
 </html>
