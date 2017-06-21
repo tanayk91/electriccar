@@ -14,9 +14,9 @@ if (!$_POST['password']) $error.="<br />Please enter your password";
 else {
 
 
-if (strlen($_POST['password'])<8) $error.="<br />Please enter at least 8 characters";
+if (strlen($_POST['password'])<8) $error.="<br />Your password should have at least 8 characters";
 
-if(!preg_match('/[A-Z]/', $_POST['password'])) $error.= "<br />Please include min 1 capital letter";
+if(!preg_match('/[A-Z]/', $_POST['password'])) $error.= "<br />Your password should include at least 1 capital letter";
 }
 if ($error) $error = "There were error(s) in your sign up details:".$error;
 

@@ -16,9 +16,9 @@
         </div>
         <div id="registration-form">
             <form method="post">
-                <input type="text" name="first-name" class="text-field-position-registration text-field-styling" placeholder="First Name">
-                <input type="text" name="last-name" class="text-field-position-registration text-field-styling" placeholder="Last Name"><br>
-                <input type="text" name="username" class="text-field-position-registration text-field-styling" placeholder="Create a username">
+                <input type="text" name="first-name" class="text-field-position-registration text-field-styling" placeholder="First Name" value="<?php echo addcslashes($_POST['first-name']); ?>">
+                <input type="text" name="last-name" class="text-field-position-registration text-field-styling" placeholder="Last Name" value="<?php echo addcslashes($_POST['last-name']); ?>"><br>
+                <input type="text" name="username" class="text-field-position-registration text-field-styling" placeholder="Create a username" value="<?php echo addcslashes($_POST['username']); ?>">
                 <input type="password" name="password" class="text-field-position-registration text-field-styling" placeholder="Create a password"><br>
                 <select name="current-class">
                     <option value="eighth">Class 8</option>
