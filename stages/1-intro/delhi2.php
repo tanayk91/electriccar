@@ -65,7 +65,7 @@
                 <p>The Ministry submitted the report with a thorough analysis and few suggestions. A graph from this report is shown in the following challenge. Answer the questions after interpreting the graph.</p>
             </div>
             <div class="centre-div">
-                <a href="landing.php" class="proceed-link">BEGIN CHALLENGE</a>
+                <a href="landing2.php" class="proceed-link">BEGIN CHALLENGE</a>
             </div>
         </div>
         <script src="../../js/parallax.js"></script>

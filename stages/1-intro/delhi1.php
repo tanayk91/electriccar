@@ -63,7 +63,7 @@
                 <p>Visibility levels in west and east Delhi have dropped under 10 metres due to heavy smog. The PM2.5 levels are higher than they have been the entire year.<br><br>The city has shutdown. Local authorities have advised residents to stay indoors, except in cases of emergency. All schools and government offices have been ordered to remain closed for the coming week.</p>
             </div>
             <div class="centre-div">
-                <a href="delhi2.php" class="proceed-link">CONTINUE</a>
+                <a href="landing1.php" class="proceed-link">BEGIN CHALLENGE</a>
             </div>
         </div>
         <script src="../../js/parallax.js"></script>

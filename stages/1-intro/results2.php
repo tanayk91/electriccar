@@ -61,7 +61,7 @@
 
                     //queries for question 1 start here
                     //query to get question from the database
-                    $query_questions = "SELECT `question` FROM `ecDB`.`questions` WHERE questionID = 'z5'";
+                    $query_questions = "SELECT `question` FROM `ecDB`.`questions` WHERE questionID = 'z11'";
                     $result_questions = mysqli_query($link, $query_questions);
 
                     while ($question = mysqli_fetch_object($result_questions)) {
@@ -71,13 +71,13 @@
                     echo "<br>";
 
                     //query to get user response from database
-                    $user_response_query = "SELECT `responseID` FROM `ecDB`.`response` WHERE `questionID` = 'z5' AND `userID` = '{$_SESSION['userID']}'";
+                    $user_response_query = "SELECT `responseID` FROM `ecDB`.`response` WHERE `questionID` = 'z11' AND `userID` = '{$_SESSION['userID']}'";
                     $user_response_result = mysqli_query($link, $user_response_query);
 
                     while ($response = mysqli_fetch_object($user_response_result)) {
                       $response_with_prefix = "option".$response->responseID;
 
-                      $select_option_query = "SELECT $response_with_prefix FROM `ecDB`.`question_options` WHERE `questionID` = 'z5'";
+                      $select_option_query = "SELECT $response_with_prefix FROM `ecDB`.`question_options` WHERE `questionID` = 'z11'";
                       $select_option_result = mysqli_query($link, $select_option_query);
 
                       while ($selected_option = mysqli_fetch_object($select_option_result)) {
@@ -87,13 +87,13 @@
                     }
 
                     //query to get the solution from the database
-                    $correct_answer_query = "SELECT `answerID` FROM `ecDB`.`answers` WHERE `questionID` = 'z5'";
+                    $correct_answer_query = "SELECT `answerID` FROM `ecDB`.`answers` WHERE `questionID` = 'z11'";
                     $correct_answer_result = mysqli_query($link, $correct_answer_query);
 
                     while ($solution = mysqli_fetch_object($correct_answer_result)) {
                       $answer_with_prefix = "option".$solution->answerID;
 
-                      $select_option_query = "SELECT $answer_with_prefix FROM `ecDB`.`question_options` WHERE `questionID` = 'z5'";
+                      $select_option_query = "SELECT $answer_with_prefix FROM `ecDB`.`question_options` WHERE `questionID` = 'z11'";
                       $select_option_result = mysqli_query($link, $select_option_query);
 
                       while ($selected_option = mysqli_fetch_object($select_option_result)) {
@@ -114,7 +114,7 @@
 
                     //queries for question 2 start here
                     //query to get question from the database
-                    $query_questions = "SELECT `question` FROM `ecDB`.`questions` WHERE questionID = 'z6'";
+                    $query_questions = "SELECT `question` FROM `ecDB`.`questions` WHERE questionID = 'z12'";
                     $result_questions = mysqli_query($link, $query_questions);
 
                     while ($question = mysqli_fetch_object($result_questions)) {
@@ -124,13 +124,13 @@
                     echo "<br>";
 
                     //query to get user response from database
-                    $user_response_query = "SELECT `responseID` FROM `ecDB`.`response` WHERE `questionID` = 'z6' AND `userID` = '{$_SESSION['userID']}'";
+                    $user_response_query = "SELECT `responseID` FROM `ecDB`.`response` WHERE `questionID` = 'z12' AND `userID` = '{$_SESSION['userID']}'";
                     $user_response_result = mysqli_query($link, $user_response_query);
 
                     while ($response = mysqli_fetch_object($user_response_result)) {
                       $response_with_prefix = "option".$response->responseID;
 
-                      $select_option_query = "SELECT $response_with_prefix FROM `ecDB`.`question_options` WHERE `questionID` = 'z6'";
+                      $select_option_query = "SELECT $response_with_prefix FROM `ecDB`.`question_options` WHERE `questionID` = 'z12'";
                       $select_option_result = mysqli_query($link, $select_option_query);
 
                       while ($selected_option = mysqli_fetch_object($select_option_result)) {
@@ -140,13 +140,13 @@
                     }
 
                     //query to get the solution from the database
-                    $correct_answer_query = "SELECT `answerID` FROM `ecDB`.`answers` WHERE `questionID` = 'z6'";
+                    $correct_answer_query = "SELECT `answerID` FROM `ecDB`.`answers` WHERE `questionID` = 'z12'";
                     $correct_answer_result = mysqli_query($link, $correct_answer_query);
 
                     while ($solution = mysqli_fetch_object($correct_answer_result)) {
                       $answer_with_prefix = "option".$solution->answerID;
 
-                      $select_option_query = "SELECT $answer_with_prefix FROM `ecDB`.`question_options` WHERE `questionID` = 'z6'";
+                      $select_option_query = "SELECT $answer_with_prefix FROM `ecDB`.`question_options` WHERE `questionID` = 'z12'";
                       $select_option_result = mysqli_query($link, $select_option_query);
 
                       while ($selected_option = mysqli_fetch_object($select_option_result)) {
@@ -167,7 +167,7 @@
 
                     //queries for question 3 start here
                     //query to get question from the database
-                    $query_questions = "SELECT `question` FROM `ecDB`.`questions` WHERE questionID = 'z7'";
+                    $query_questions = "SELECT `question` FROM `ecDB`.`questions` WHERE questionID = 'z13'";
                     $result_questions = mysqli_query($link, $query_questions);
 
                     while ($question = mysqli_fetch_object($result_questions)) {
@@ -177,13 +177,13 @@
                     echo "<br>";
 
                     //query to get user response from database
-                    $user_response_query = "SELECT `responseID` FROM `ecDB`.`response` WHERE `questionID` = 'z7' AND `userID` = '{$_SESSION['userID']}'";
+                    $user_response_query = "SELECT `responseID` FROM `ecDB`.`response` WHERE `questionID` = 'z13' AND `userID` = '{$_SESSION['userID']}'";
                     $user_response_result = mysqli_query($link, $user_response_query);
 
                     while ($response = mysqli_fetch_object($user_response_result)) {
                       $response_with_prefix = "option".$response->responseID;
 
-                      $select_option_query = "SELECT $response_with_prefix FROM `ecDB`.`question_options` WHERE `questionID` = 'z7'";
+                      $select_option_query = "SELECT $response_with_prefix FROM `ecDB`.`question_options` WHERE `questionID` = 'z13'";
                       $select_option_result = mysqli_query($link, $select_option_query);
 
                       while ($selected_option = mysqli_fetch_object($select_option_result)) {
@@ -193,13 +193,13 @@
                     }
 
                     //query to get the solution from the database
-                    $correct_answer_query = "SELECT `answerID` FROM `ecDB`.`answers` WHERE `questionID` = 'z7'";
+                    $correct_answer_query = "SELECT `answerID` FROM `ecDB`.`answers` WHERE `questionID` = 'z13'";
                     $correct_answer_result = mysqli_query($link, $correct_answer_query);
 
                     while ($solution = mysqli_fetch_object($correct_answer_result)) {
                       $answer_with_prefix = "option".$solution->answerID;
 
-                      $select_option_query = "SELECT $answer_with_prefix FROM `ecDB`.`question_options` WHERE `questionID` = 'z7'";
+                      $select_option_query = "SELECT $answer_with_prefix FROM `ecDB`.`question_options` WHERE `questionID` = 'z13'";
                       $select_option_result = mysqli_query($link, $select_option_query);
 
                       while ($selected_option = mysqli_fetch_object($select_option_result)) {
@@ -220,7 +220,7 @@
 
                     //queries for question 4 start here
                     //query to get question from the database
-                    $query_questions = "SELECT `question` FROM `ecDB`.`questions` WHERE questionID = 'z9'";
+                    $query_questions = "SELECT `question` FROM `ecDB`.`questions` WHERE questionID = 'z14'";
                     $result_questions = mysqli_query($link, $query_questions);
 
                     while ($question = mysqli_fetch_object($result_questions)) {
@@ -230,13 +230,13 @@
                     echo "<br>";
 
                     //query to get user response from database
-                    $user_response_query = "SELECT `responseID` FROM `ecDB`.`response` WHERE `questionID` = 'z9' AND `userID` = '{$_SESSION['userID']}'";
+                    $user_response_query = "SELECT `responseID` FROM `ecDB`.`response` WHERE `questionID` = 'z14' AND `userID` = '{$_SESSION['userID']}'";
                     $user_response_result = mysqli_query($link, $user_response_query);
 
                     while ($response = mysqli_fetch_object($user_response_result)) {
                       $response_with_prefix = "option".$response->responseID;
 
-                      $select_option_query = "SELECT $response_with_prefix FROM `ecDB`.`question_options` WHERE `questionID` = 'z9'";
+                      $select_option_query = "SELECT $response_with_prefix FROM `ecDB`.`question_options` WHERE `questionID` = 'z14'";
                       $select_option_result = mysqli_query($link, $select_option_query);
 
                       while ($selected_option = mysqli_fetch_object($select_option_result)) {
@@ -246,13 +246,13 @@
                     }
 
                     //query to get the solution from the database
-                    $correct_answer_query = "SELECT `answerID` FROM `ecDB`.`answers` WHERE `questionID` = 'z9'";
+                    $correct_answer_query = "SELECT `answerID` FROM `ecDB`.`answers` WHERE `questionID` = 'z14'";
                     $correct_answer_result = mysqli_query($link, $correct_answer_query);
 
                     while ($solution = mysqli_fetch_object($correct_answer_result)) {
                       $answer_with_prefix = "option".$solution->answerID;
 
-                      $select_option_query = "SELECT $answer_with_prefix FROM `ecDB`.`question_options` WHERE `questionID` = 'z9'";
+                      $select_option_query = "SELECT $answer_with_prefix FROM `ecDB`.`question_options` WHERE `questionID` = 'z14'";
                       $select_option_result = mysqli_query($link, $select_option_query);
 
                       while ($selected_option = mysqli_fetch_object($select_option_result)) {
@@ -273,7 +273,7 @@
 
                     //queries for question 5 start here
                     //query to get question from the database
-                    $query_questions = "SELECT `question` FROM `ecDB`.`questions` WHERE questionID = 'z10'";
+                    $query_questions = "SELECT `question` FROM `ecDB`.`questions` WHERE questionID = 'z15'";
                     $result_questions = mysqli_query($link, $query_questions);
 
                     while ($question = mysqli_fetch_object($result_questions)) {
@@ -283,13 +283,13 @@
                     echo "<br>";
 
                     //query to get user response from database
-                    $user_response_query = "SELECT `responseID` FROM `ecDB`.`response` WHERE `questionID` = 'z10' AND `userID` = '{$_SESSION['userID']}'";
+                    $user_response_query = "SELECT `responseID` FROM `ecDB`.`response` WHERE `questionID` = 'z15' AND `userID` = '{$_SESSION['userID']}'";
                     $user_response_result = mysqli_query($link, $user_response_query);
 
                     while ($response = mysqli_fetch_object($user_response_result)) {
                       $response_with_prefix = "option".$response->responseID;
 
-                      $select_option_query = "SELECT $response_with_prefix FROM `ecDB`.`question_options` WHERE `questionID` = 'z10'";
+                      $select_option_query = "SELECT $response_with_prefix FROM `ecDB`.`question_options` WHERE `questionID` = 'z15'";
                       $select_option_result = mysqli_query($link, $select_option_query);
 
                       while ($selected_option = mysqli_fetch_object($select_option_result)) {
@@ -299,13 +299,13 @@
                     }
 
                     //query to get the solution from the database
-                    $correct_answer_query = "SELECT `answerID` FROM `ecDB`.`answers` WHERE `questionID` = 'z10'";
+                    $correct_answer_query = "SELECT `answerID` FROM `ecDB`.`answers` WHERE `questionID` = 'z15'";
                     $correct_answer_result = mysqli_query($link, $correct_answer_query);
 
                     while ($solution = mysqli_fetch_object($correct_answer_result)) {
                       $answer_with_prefix = "option".$solution->answerID;
 
-                      $select_option_query = "SELECT $answer_with_prefix FROM `ecDB`.`question_options` WHERE `questionID` = 'z10'";
+                      $select_option_query = "SELECT $answer_with_prefix FROM `ecDB`.`question_options` WHERE `questionID` = 'z15'";
                       $select_option_result = mysqli_query($link, $select_option_query);
 
                       while ($selected_option = mysqli_fetch_object($select_option_result)) {
@@ -323,6 +323,271 @@
                     echo "<br><br><br><hr /><br>";
 
                     //queries for question 5 end here
+
+                    //queries for question 6 start here
+                    //query to get question from the database
+                    $query_questions = "SELECT `question` FROM `ecDB`.`questions` WHERE questionID = 'z16'";
+                    $result_questions = mysqli_query($link, $query_questions);
+
+                    while ($question = mysqli_fetch_object($result_questions)) {
+                      echo "<h3>".$question->question."</h3>";
+                    }
+
+                    echo "<br>";
+
+                    //query to get user response from database
+                    $user_response_query = "SELECT `responseID` FROM `ecDB`.`response` WHERE `questionID` = 'z16' AND `userID` = '{$_SESSION['userID']}'";
+                    $user_response_result = mysqli_query($link, $user_response_query);
+
+                    while ($response = mysqli_fetch_object($user_response_result)) {
+                      $response_with_prefix = "option".$response->responseID;
+
+                      $select_option_query = "SELECT $response_with_prefix FROM `ecDB`.`question_options` WHERE `questionID` = 'z16'";
+                      $select_option_result = mysqli_query($link, $select_option_query);
+
+                      while ($selected_option = mysqli_fetch_object($select_option_result)) {
+                        echo "Your response: ".$selected_option->$response_with_prefix;
+                        echo "<br><br>";
+                      }
+                    }
+
+                    //query to get the solution from the database
+                    $correct_answer_query = "SELECT `answerID` FROM `ecDB`.`answers` WHERE `questionID` = 'z16'";
+                    $correct_answer_result = mysqli_query($link, $correct_answer_query);
+
+                    while ($solution = mysqli_fetch_object($correct_answer_result)) {
+                      $answer_with_prefix = "option".$solution->answerID;
+
+                      $select_option_query = "SELECT $answer_with_prefix FROM `ecDB`.`question_options` WHERE `questionID` = 'z16'";
+                      $select_option_result = mysqli_query($link, $select_option_query);
+
+                      while ($selected_option = mysqli_fetch_object($select_option_result)) {
+                        echo "Correct answer: ".$selected_option->$answer_with_prefix;
+                        echo "<br><br>";
+                      }
+
+                      if ($response->responseID == $solution->answerID) {
+                        echo "Points scored: 10";
+                      } else {
+                        echo "Points scored: 0";
+                      }
+                    }
+
+                    echo "<br><br><br><hr /><br>";
+
+                    //queries for question 6 end here
+
+                    //queries for question 7 start here
+                    //query to get question from the database
+                    $query_questions = "SELECT `question` FROM `ecDB`.`questions` WHERE questionID = 'z17'";
+                    $result_questions = mysqli_query($link, $query_questions);
+
+                    while ($question = mysqli_fetch_object($result_questions)) {
+                      echo "<h3>".$question->question."</h3>";
+                    }
+
+                    echo "<br>";
+
+                    //query to get user response from database
+                    $user_response_query = "SELECT `responseID` FROM `ecDB`.`response` WHERE `questionID` = 'z17' AND `userID` = '{$_SESSION['userID']}'";
+                    $user_response_result = mysqli_query($link, $user_response_query);
+
+                    while ($response = mysqli_fetch_object($user_response_result)) {
+                      $response_with_prefix = "option".$response->responseID;
+
+                      $select_option_query = "SELECT $response_with_prefix FROM `ecDB`.`question_options` WHERE `questionID` = 'z17'";
+                      $select_option_result = mysqli_query($link, $select_option_query);
+
+                      while ($selected_option = mysqli_fetch_object($select_option_result)) {
+                        echo "Your response: ".$selected_option->$response_with_prefix;
+                        echo "<br><br>";
+                      }
+                    }
+
+                    //query to get the solution from the database
+                    $correct_answer_query = "SELECT `answerID` FROM `ecDB`.`answers` WHERE `questionID` = 'z17'";
+                    $correct_answer_result = mysqli_query($link, $correct_answer_query);
+
+                    while ($solution = mysqli_fetch_object($correct_answer_result)) {
+                      $answer_with_prefix = "option".$solution->answerID;
+
+                      $select_option_query = "SELECT $answer_with_prefix FROM `ecDB`.`question_options` WHERE `questionID` = 'z17'";
+                      $select_option_result = mysqli_query($link, $select_option_query);
+
+                      while ($selected_option = mysqli_fetch_object($select_option_result)) {
+                        echo "Correct answer: ".$selected_option->$answer_with_prefix;
+                        echo "<br><br>";
+                      }
+
+                      if ($response->responseID == $solution->answerID) {
+                        echo "Points scored: 10";
+                      } else {
+                        echo "Points scored: 0";
+                      }
+                    }
+
+                    echo "<br><br><br><hr /><br>";
+
+                    //queries for question 7 end here
+
+                    //queries for question 8 start here
+                    //query to get question from the database
+                    $query_questions = "SELECT `question` FROM `ecDB`.`questions` WHERE questionID = 'z18'";
+                    $result_questions = mysqli_query($link, $query_questions);
+
+                    while ($question = mysqli_fetch_object($result_questions)) {
+                      echo "<h3>".$question->question."</h3>";
+                    }
+
+                    echo "<br>";
+
+                    //query to get user response from database
+                    $user_response_query = "SELECT `responseID` FROM `ecDB`.`response` WHERE `questionID` = 'z18' AND `userID` = '{$_SESSION['userID']}'";
+                    $user_response_result = mysqli_query($link, $user_response_query);
+
+                    while ($response = mysqli_fetch_object($user_response_result)) {
+                      $response_with_prefix = "option".$response->responseID;
+
+                      $select_option_query = "SELECT $response_with_prefix FROM `ecDB`.`question_options` WHERE `questionID` = 'z18'";
+                      $select_option_result = mysqli_query($link, $select_option_query);
+
+                      while ($selected_option = mysqli_fetch_object($select_option_result)) {
+                        echo "Your response: ".$selected_option->$response_with_prefix;
+                        echo "<br><br>";
+                      }
+                    }
+
+                    //query to get the solution from the database
+                    $correct_answer_query = "SELECT `answerID` FROM `ecDB`.`answers` WHERE `questionID` = 'z18'";
+                    $correct_answer_result = mysqli_query($link, $correct_answer_query);
+
+                    while ($solution = mysqli_fetch_object($correct_answer_result)) {
+                      $answer_with_prefix = "option".$solution->answerID;
+
+                      $select_option_query = "SELECT $answer_with_prefix FROM `ecDB`.`question_options` WHERE `questionID` = 'z18'";
+                      $select_option_result = mysqli_query($link, $select_option_query);
+
+                      while ($selected_option = mysqli_fetch_object($select_option_result)) {
+                        echo "Correct answer: ".$selected_option->$answer_with_prefix;
+                        echo "<br><br>";
+                      }
+
+                      if ($response->responseID == $solution->answerID) {
+                        echo "Points scored: 10";
+                      } else {
+                        echo "Points scored: 0";
+                      }
+                    }
+
+                    echo "<br><br><br><hr /><br>";
+
+                    //queries for question 8 end here
+
+                    //queries for question 9 start here
+                    //query to get question from the database
+                    $query_questions = "SELECT `question` FROM `ecDB`.`questions` WHERE questionID = 'z19'";
+                    $result_questions = mysqli_query($link, $query_questions);
+
+                    while ($question = mysqli_fetch_object($result_questions)) {
+                      echo "<h3>".$question->question."</h3>";
+                    }
+
+                    echo "<br>";
+
+                    //query to get user response from database
+                    $user_response_query = "SELECT `responseID` FROM `ecDB`.`response` WHERE `questionID` = 'z19' AND `userID` = '{$_SESSION['userID']}'";
+                    $user_response_result = mysqli_query($link, $user_response_query);
+
+                    while ($response = mysqli_fetch_object($user_response_result)) {
+                      $response_with_prefix = "option".$response->responseID;
+
+                      $select_option_query = "SELECT $response_with_prefix FROM `ecDB`.`question_options` WHERE `questionID` = 'z19'";
+                      $select_option_result = mysqli_query($link, $select_option_query);
+
+                      while ($selected_option = mysqli_fetch_object($select_option_result)) {
+                        echo "Your response: ".$selected_option->$response_with_prefix;
+                        echo "<br><br>";
+                      }
+                    }
+
+                    //query to get the solution from the database
+                    $correct_answer_query = "SELECT `answerID` FROM `ecDB`.`answers` WHERE `questionID` = 'z19'";
+                    $correct_answer_result = mysqli_query($link, $correct_answer_query);
+
+                    while ($solution = mysqli_fetch_object($correct_answer_result)) {
+                      $answer_with_prefix = "option".$solution->answerID;
+
+                      $select_option_query = "SELECT $answer_with_prefix FROM `ecDB`.`question_options` WHERE `questionID` = 'z19'";
+                      $select_option_result = mysqli_query($link, $select_option_query);
+
+                      while ($selected_option = mysqli_fetch_object($select_option_result)) {
+                        echo "Correct answer: ".$selected_option->$answer_with_prefix;
+                        echo "<br><br>";
+                      }
+
+                      if ($response->responseID == $solution->answerID) {
+                        echo "Points scored: 10";
+                      } else {
+                        echo "Points scored: 0";
+                      }
+                    }
+
+                    echo "<br><br><br><hr /><br>";
+
+                    //queries for question 9 end here
+
+                    //queries for question 10 start here
+                    //query to get question from the database
+                    $query_questions = "SELECT `question` FROM `ecDB`.`questions` WHERE questionID = 'z20'";
+                    $result_questions = mysqli_query($link, $query_questions);
+
+                    while ($question = mysqli_fetch_object($result_questions)) {
+                      echo "<h3>".$question->question."</h3>";
+                    }
+
+                    echo "<br>";
+
+                    //query to get user response from database
+                    $user_response_query = "SELECT `responseID` FROM `ecDB`.`response` WHERE `questionID` = 'z20' AND `userID` = '{$_SESSION['userID']}'";
+                    $user_response_result = mysqli_query($link, $user_response_query);
+
+                    while ($response = mysqli_fetch_object($user_response_result)) {
+                      $response_with_prefix = "option".$response->responseID;
+
+                      $select_option_query = "SELECT $response_with_prefix FROM `ecDB`.`question_options` WHERE `questionID` = 'z20'";
+                      $select_option_result = mysqli_query($link, $select_option_query);
+
+                      while ($selected_option = mysqli_fetch_object($select_option_result)) {
+                        echo "Your response: ".$selected_option->$response_with_prefix;
+                        echo "<br><br>";
+                      }
+                    }
+
+                    //query to get the solution from the database
+                    $correct_answer_query = "SELECT `answerID` FROM `ecDB`.`answers` WHERE `questionID` = 'z20'";
+                    $correct_answer_result = mysqli_query($link, $correct_answer_query);
+
+                    while ($solution = mysqli_fetch_object($correct_answer_result)) {
+                      $answer_with_prefix = "option".$solution->answerID;
+
+                      $select_option_query = "SELECT $answer_with_prefix FROM `ecDB`.`question_options` WHERE `questionID` = 'z20'";
+                      $select_option_result = mysqli_query($link, $select_option_query);
+
+                      while ($selected_option = mysqli_fetch_object($select_option_result)) {
+                        echo "Correct answer: ".$selected_option->$answer_with_prefix;
+                        echo "<br><br>";
+                      }
+
+                      if ($response->responseID == $solution->answerID) {
+                        echo "Points scored: 10";
+                      } else {
+                        echo "Points scored: 0";
+                      }
+                    }
+
+                    echo "<br><br><br><hr /><br>";
+
+                    //queries for question 10 end here
                  ?>
 
             </div>

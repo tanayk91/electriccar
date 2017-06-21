@@ -65,7 +65,7 @@
                 <p>A graph showing the range of PM 2.5 levels for all days in the month of December are shown in the following challenge. Analyse the graph, and answer the questions based on your understanding.</p>
             </div>
             <div class="centre-div">
-                <a href="questions/pollution_questions_q5.php" class="proceed-link">BEGIN CHALLENGE</a>
+                <a href="landing3.php" class="proceed-link">BEGIN CHALLENGE</a>
             </div>
         </div>
 
